@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+/*
+cor01 = #C406D4
+cor02 = #9E12EB
+cor03 = #5406D4
+cor04 = #4F07F7
+*/
+
+@media screen and (max-width: 600px) {
+    section#login {
+        width: 250px;
+        height: 400px;
+    }
+    div#imagem {
+        height: 200px;
+    }
+    div#formulario > form {
+        width: 240px;
+        margin: 5px;
+    }
+    #iusu {
+        top: 1px;
+    }
+    #isen {
+        top: 29px;
+    }
+    .opcoes {
+        width: 100%;
+        margin: 1px 0px 1px 0px;
+        padding: 2px;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: portrait) {
+    html, body {
+        background-image: linear-gradient(#9E12EB , 40vh, #113c50);
+    }
+    section#login {
+        width: 600px;
+        height: 210px;
+    }
+    div#imagem {
+        width: 200px;
+        height: 300px;
+        display: inline-block;
+    }
+    div#formulario {
+        width: 400px;
+        height: 200px;
+        padding: 5px;
+        display: inline-block;
+        position: absolute;
+    }
+    form > p {
+        scale: 120%;
+        margin-left: 40px;
+        margin-bottom: 2px;
+    }
+    #iusu, #isen {
+        width: 83%;
+        top: 1px;
+        transition: width 0s, height 0s;
+    }
+    .opcoes {
+        margin-top: 2px;
+        width: 90%;
+        height: 23px;
+    }
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+    html, body {
+        background-image: linear-gradient(#9E12EB , 40vh, #113c50);
+    }
+    section#login {
+        width: 80vw;
+        max-width: 778px;
+        height: 210px;
+        display: flex;
+        flex-direction: row;
+    }
+    div#imagem {
+        width: 30vw;
+        height: 300px;
+        display: inline-block;
+        order: 2;
+    }
+    div#formulario {
+        display: block;
+        max-width: 500px;
+        min-width: 325px;
+        height: 100px;
+        order: 1;
+        padding: 10px;
+    }
+    form > p {
+        scale: 110%;
+        margin-left: 24px;
+    }
+    #iusu, #isen {
+        width: 84%;
+        max-width: 355px;
+        min-width: 287px;
+    }
+    .opcoes {
+        width: 90%;
+        max-width: 380px;
+        min-width: 314px;
+    }
+}

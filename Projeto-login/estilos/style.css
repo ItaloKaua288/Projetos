@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+/*
+cor01 = #C406D4
+cor02 = #9E12EB
+cor03 = #5406D4
+cor04 = #4F07F7
+*/
+* {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #9E12EB;
+}
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 20px;
+    background-color: white;
+    overflow: hidden;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.575);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+h1, p {
+    text-shadow: 1px 1px 8px rgb(0 0 0 / 28%);
+}
+div#imagem {
+    background: #9E12EB url(../imagens/hazelwood.jpg) no-repeat bottom center;
+}
+div#formulario > form {
+    color: white;
+    position: relative;
+}
+div#formulario > h1 {
+    text-align: center;
+}
+div#formulario > form > p > label > span {
+    background-color: #5406D4;
+    border-radius: 5px;
+}
+div#formulario > p {
+    padding: 5px;
+    text-indent: 3px;
+}
+.usu-sen {
+    position: absolute;
+    margin-left: 1px;
+    width: 214px;
+    border: 2px solid #5406D4;
+    border-radius: 3px;
+}
+input#ientrar {
+    background-color: #14526e;
+    color: white;
+}
+input#ientrar:hover {
+    background-color: #2386b4;
+}
+input#iesqueci {
+    border: 1px solid #1c729b;
+    color: #1c729b;
+}
+input#iesqueci:hover {
+    background-color: #2386b4;
+    color: white;
+}
+.opcoes {
+    border: none;
+    border-radius: 5px;
+}
